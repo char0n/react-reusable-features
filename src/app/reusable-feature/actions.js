@@ -11,18 +11,18 @@ export default function createActions(namespace, selectors) {
    * Action types.
    */
 
-  const STANDARD_FEATURE_INCREMENT_CLICK = `${namespace}_STANDARD_FEATURE_INCREMENT_CLICK`;
+  const REUSABLE_FEATURE_INCREMENT_CLICK = `${namespace}_REUSABLE_FEATURE_INCREMENT_CLICK`;
 
 
   /**
    * Action creators.
    */
 
-  const incrementClick = createAction(STANDARD_FEATURE_INCREMENT_CLICK);
+  const incrementClick = createAction(REUSABLE_FEATURE_INCREMENT_CLICK);
 
 
   return {
-    STANDARD_FEATURE_INCREMENT_CLICK,
+    REUSABLE_FEATURE_INCREMENT_CLICK: REUSABLE_FEATURE_INCREMENT_CLICK,
 
     incrementClick,
   };
